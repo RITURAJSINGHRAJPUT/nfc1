@@ -22,8 +22,8 @@ function hideQR() {
 
 function shareLink() {
   const shareData = {
-    title: 'Saikiran Rudra Links',
-    text: 'Check out Saikiran Rudra’s links!',
+    title: 'Ajay tiwari’s Links',
+    text: 'Check out Ajay tiwari’s links!',
     url: window.location.href,
   };
 
@@ -31,7 +31,7 @@ function shareLink() {
     navigator.share(shareData).catch((err) => console.log('Error sharing:', err));
   } else {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent("Check out Saikiran Rudra’s links!");
+    const text = encodeURIComponent("Check out Ajay tiwari’s links!");
     const links = `
 WhatsApp: https://wa.me/?text=${text}%20${url}
 LinkedIn: https://www.linkedin.com/sharing/share-offsite/?url=${url}
