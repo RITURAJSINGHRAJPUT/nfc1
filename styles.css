@@ -171,11 +171,28 @@ body {
 }
 
 @media (max-width: 600px) {
+  body {
+    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    overflow-x: hidden;
+  }
   .card {
-    max-width: 95vw;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 12px;
+    max-width: 100vw;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    border-radius: 0;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .profile-img {
     width: 90px;
