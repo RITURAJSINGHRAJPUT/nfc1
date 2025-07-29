@@ -169,3 +169,32 @@ body {
   font-weight: 600;
   margin-bottom: 1rem;
 }
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 95vw;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  .profile-img {
+    width: 90px;
+    height: 90px;
+    border-width: 3px;
+  }
+  .bio-img {
+    width: 150px;
+    height: 60px;
+    border-radius: 8px;
+  }
+  .link-btn {
+    padding: 12px 10px;
+    font-size: 1rem;
+  }
+  .icon-circle {
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+    margin-right: 8px;
+  }
+}
