@@ -1,0 +1,156 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: url('bg.jpg') no-repeat center center/cover, white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  border: 5px solid #f8b500;
+  display: block;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8b500;
+  border: 2px solid #f8b500;
+  border-radius: 12px;
+  padding: 16px 22px;
+  margin: 14px 0;
+  color: #3b2f17;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(248, 181, 0, 0.10);
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
+}
+
+.link-btn:hover {
+  background: #fff9ec;
+  border-color: #f8b500;
+  color: #3b2f17;
+  box-shadow: 0 6px 18px rgba(248, 181, 0, 0.18);
+  text-decoration: none;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.link-content {
+  display: flex;
+  align-items: center;
+}
+
+.icon-circle {
+  background-color: #fff;
+  border: 2px solid #f8b500;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-size: 18px;
+  color: #f8b500;
+}
+
+.link-text {
+  font-weight: bold;
+  color: #3b2f17;
+}
+
+.link-btn img {
+  margin-left: 12px;
+  width: 16px;
+  height: 16px;
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+.link-btn:hover img {
+  filter: brightness(1);
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.bio {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.share-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.4rem;
+  color: #f8b500;
+  cursor: pointer;
+}
+
+.qr-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.4rem;
+  color: #f8b500;
+  cursor: pointer;
+}
+
+#qrModal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+#qrModalContent {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  max-width: 300px;
+}
+
+#qrClose {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #f8b500;
+  cursor: pointer;
+}
+
+.qr-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
